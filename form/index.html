@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Form</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      form {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid red;
+        max-width: 350px;
+        min-height: 400px;
+        margin: 30px auto;
+        padding: 10px;
+        background: #838c07;
+      }
+
+      button[type="submit"] {
+        padding: 8px 14px;
+        font-size: 16px;
+        font-weight: 400;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+      </div>
+      <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" pattern="[0-9]{10}" required />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" minlength="8" required />
+      </div>
+
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" min="18" max="99" required />
+      </div>
+
+      <div>
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="date">Date:</label>
+        <input type="date" id="date" required />
+      </div>
+
+      <div>
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" required />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
