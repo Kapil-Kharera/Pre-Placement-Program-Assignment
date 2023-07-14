@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+    .modal {
+  display: none; /* Hide the modal by default */
+  position: fixed; /* Position the modal */
+  z-index: 1; /* Set the z-index to bring it to the front */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scrolling if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black semi-transparent background */
+}
+
+.modal-content {
+  background-color: #fefefe; /* Modal background color */
+  margin: 15% auto; /* Center the modal vertically and horizontally */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Set the width of the modal */
+  max-width: 600px; /* Set a maximum width */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal-img {
+  width: 300px;
+  height: auto;
+}
+
+/* .modal-wrapper {
+  display: flex;
+  align-items: center;
+} */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shop Now</h1>
+      <div id="shopping-page"></div>
+      <h2>Cart Items</h2>
+      <div class="cart-page"></div>
+
+
+
+    <div id="modalContainer" class="modal">
+      <!-- Modal content -->
+      <div id="modal" class="modal-content">
+        <div class="modal-wrapper">
+          <span id="closeButton" class="close">&times;</span>
+          <img src="" alt="modal-img" id="modal-img" />
+          <h2 id="modal-title"></h2>
+          <p id="modal-price"></p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+  </div>
+
+    <!-- script links -->
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Website</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-wrapper">
+        <h1>My Todos</h1>
+        <form action="#" id="input-form">
+          <input type="text" name="todo-name" id="todo-name" placeholder="Enter todo name" required/>
+          <button type="submit" id="addBtn">Add Todo</button>
+        </form>
+      </div>
+      <div class="list-container">
+        <!-- <div class="card">
+          <p class="todo-title">Complete your work first</p>
+          <p class="todo-status">Status: <span>Pending</span></p>
+          <button id="btn-1">Remove</button>
+          <button id="btn-2">Mark Completed</button>
+          <button id="btn-3">Edit Task</button>
+        </div> -->
+      </div>
+      <div class="edit-task-container">
+        <input type="text" name="task" id="task">
+        <div class="btn-wrapper">
+            <button id="update-btn">Update</button>
+            <button id="close-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- script links -->
+    <script src="./script.js"></script>
+  </body>
+</html>
